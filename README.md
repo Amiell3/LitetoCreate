@@ -29,8 +29,9 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
 - **nbtlib (versão 1.12.1 recomendada)**
 
   Instale usando o pip:
+  ```
   pip install "nbtlib==1.12.1"
-  
+  ```
 ---
 
 ## 🚀 Guia de Uso
