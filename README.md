@@ -29,7 +29,7 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
 - **nbtlib (versão 1.12.1 recomendada)**
   Instala a biblioteca NBT que é uma estrutura de dados em forma de árvore utilizada pelo Minecraft para armazenar dados arbitrários
   
-  Instale usando o pip:
+Instale usando o pip:
   ```
   pip install "nbtlib==1.12.1"
   ```
