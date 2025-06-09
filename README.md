@@ -27,11 +27,13 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
     ```
 
 - **nbtlib (versão 1.12.1 recomendada)**
-
+  Instala a biblioteca NBT que é uma estrutura de dados em forma de árvore utilizada pelo Minecraft para armazenar dados arbitrários
+  
   Instale usando o pip:
   ```
   pip install "nbtlib==1.12.1"
   ```
+TQDM faz com que o Script tenha a barra de progresso da conversão
   ```
   pip install tqdm
   ``` 
@@ -52,25 +54,96 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
 
 ### 2. Converta para `.nbt`
 
-No terminal/prompt, execute:
+No terminal/prompt, com o script e o *.schematic NA MESMA PASTA, execute:
+
+python schem2nbt.py -i arquivo.schematic
+
+ou
 
 python schem2nbt.py -i caminho/para/sua_estrutura.schematic
-
 
 O arquivo `.nbt` será gerado na mesma pasta, com o mesmo nome.
 
 #### Opções
 
-- `-i`, `--input`: Caminho do arquivo `.schematic` de entrada (obrigatório)
-- `-o`, `--output`: Caminho do arquivo `.nbt` de saída (opcional)
-- `-f`, `--folder`: Converter todos os `.schematic` de uma pasta
-- `-v`, `--verbose`: Mostra logs detalhados
+Todos os comandos possíveis do script schem2nbt.py
+Baseado na estrutura do parser de argumentos, aqui estão todos os comandos possíveis para testar o script:
 
-Exemplo para converter todos os arquivos de uma pasta:
+###Comandos básicos obrigatórios
+Converter arquivo único:
 
-python schem2nbt.py -i ./minhas-schematics -f
+```
+python schem2nbt.py -i arquivo.schematic
+python schem2nbt.py --input arquivo.schematic
+```
+
+###Comandos com saída personalizada
+Definir arquivo de saída:
 
 
+```
+python schem2nbt.py -i IndustrialFurnace.schematic -o MinhaFornalha.nbt
+python schem2nbt.py --input IndustrialFurnace.schematic --output MinhaFornalha.nbt
+```
+###Comandos para pastas
+Converter pasta inteira:
+
+```
+python schem2nbt.py -i ./schematics -f
+python schem2nbt.py --input ./schematics --folder
+python schem2nbt.py -i D:\meusschematics -f -o D:\meusNBTs
+```
+
+###Comandos com logs detalhados
+Modo verbose (logs):
+
+```
+python schem2nbt.py -i arquivo.schematic -v
+python schem2nbt.py --input arquivo.schematic --verbose
+python schem2nbt.py -i ./pasta -f -v
+```
+
+###Combinações completas
+Todos os parâmetros:
+
+```
+python schem2nbt.py -i IndustrialFurnace.schematic -o Industrial.nbt -v
+python schem2nbt.py --input ./schematics --output ./converted --folder --verbose
+```
+
+###Comandos de ajuda
+Ver ajuda:
+
+```
+python schem2nbt.py -h
+python schem2nbt.py --help
+```
+
+###Para estruturas do Create mod:
+
+```
+python schem2nbt.py -i IndustrialFurnace.schematic -v
+python schem2nbt.py -i ./create-builds -f -o ./nbt-files -v
+```
+
+Comandos que devem dar erro (para testar)
+Arquivo inexistente:
+
+```
+python schem2nbt.py -i naoexiste.schematic
+```
+Pasta inexistente:
+
+```
+python schem2nbt.py -i ./pastainexistente -f
+```
+
+###Sem parâmetro obrigatório:
+
+```
+python schem2nbt.py
+python schem2nbt.py -o saida.nbt
+```
 ---
 
 ## 🛠️ Funcionalidades
@@ -81,14 +154,9 @@ python schem2nbt.py -i ./minhas-schematics -f
 - Processa entidades de bloco (TileEntities)
 
 ---
-
 ## 📁 Estrutura do Projeto
 
 schem2nbt.py
-README.md
-requirements.txt
-
-
 ---
 
 ## ❗ Observações
