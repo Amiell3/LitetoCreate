@@ -79,7 +79,7 @@ python schem2nbt.py --input arquivo.schematic
 
 ## Comandos com saída personalizada
 
-Definir arquivo de saída:
+# Definir arquivo de saída:
 
 
 ```
