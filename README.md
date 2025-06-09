@@ -32,28 +32,16 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
   ```
   pip install "nbtlib==1.12.1"
   ```
+  ```
+  pip install tqdm
+  ``` 
 ---
 
 ## 🚀 Guia de Uso
 
 ### 1. Prepare seu arquivo
 
-- Para WorldEdit: use o `.schematic` exportado normalmente.
-- Para Litematica: abra no Litematica e exporte como `.schematic`.
-
-### 2. Converta para `.nbt`
-
-No terminal/prompt, execute:
-
-
-- **tqdm**
-
-Para mostrar barra de progresso no terminal:
-
-pip install tqdm
-
-
----
+- Para WorldEdit e Litematica use o `.schematic` exportado normalmente.
 
 ## 🚀 Guia de Uso
 
