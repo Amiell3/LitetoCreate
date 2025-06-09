@@ -77,17 +77,17 @@ python schem2nbt.py -i arquivo.schematic
 python schem2nbt.py --input arquivo.schematic
 ```
 
-## Comandos com saída personalizada
+# Comandos com saída personalizada
 
-# Definir arquivo de saída:
+## Definir arquivo de saída:
 
 
 ```
 python schem2nbt.py -i IndustrialFurnace.schematic -o MinhaFornalha.nbt
 python schem2nbt.py --input IndustrialFurnace.schematic --output MinhaFornalha.nbt
 ```
-###Comandos para pastas
-Converter pasta inteira:
+# Comandos para pastas
+## Converter pasta inteira:
 
 ```
 python schem2nbt.py -i ./schematics -f
@@ -95,8 +95,8 @@ python schem2nbt.py --input ./schematics --folder
 python schem2nbt.py -i D:\meusschematics -f -o D:\meusNBTs
 ```
 
-###Comandos com logs detalhados
-Modo verbose (logs):
+# Comandos com logs detalhados
+## Modo verbose (logs):
 
 ```
 python schem2nbt.py -i arquivo.schematic -v
@@ -104,42 +104,36 @@ python schem2nbt.py --input arquivo.schematic --verbose
 python schem2nbt.py -i ./pasta -f -v
 ```
 
-###Combinações completas
-Todos os parâmetros:
+# Combinações completas
+## Todos os parâmetros:
 
 ```
 python schem2nbt.py -i IndustrialFurnace.schematic -o Industrial.nbt -v
 python schem2nbt.py --input ./schematics --output ./converted --folder --verbose
 ```
 
-###Comandos de ajuda
-Ver ajuda:
+# Comandos de ajuda
+## Ver ajuda:
 
 ```
 python schem2nbt.py -h
 python schem2nbt.py --help
 ```
 
-###Para estruturas do Create mod:
+# Para estruturas do Create mod:
 
 ```
 python schem2nbt.py -i IndustrialFurnace.schematic -v
 python schem2nbt.py -i ./create-builds -f -o ./nbt-files -v
 ```
 
-Comandos que devem dar erro (para testar)
-Arquivo inexistente:
+# Comandos que devem dar erro (para testar)
+## Arquivo inexistente:
 
 ```
 python schem2nbt.py -i naoexiste.schematic
 ```
-Pasta inexistente:
-
-```
-python schem2nbt.py -i ./pastainexistente -f
-```
-
-###Sem parâmetro obrigatório:
+# Sem parâmetro obrigatório:
 
 ```
 python schem2nbt.py
