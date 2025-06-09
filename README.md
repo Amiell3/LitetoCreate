@@ -17,7 +17,7 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
 
 - **Python 3.8 ou superior**
 
-  - Baixe e instale o Python no site oficial: [python.org](https://www.python.org/downloads/)
+  - Baixe e instale o Python no site oficial: [python.org](https://www.python.org/downloads/) ou link direto [aqui](https://www.python.org/ftp/python/3.13.4/python-3.13.4-amd64.exe)
   - Durante a instalação no Windows, marque a opção **Add Python to PATH** para facilitar o uso no terminal.
   - Para Linux, você pode usar o gerenciador de pacotes da sua distribuição ou compilar a partir do código fonte. Exemplo para Ubuntu/Debian:
 
