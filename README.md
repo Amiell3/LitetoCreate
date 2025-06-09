@@ -1,4 +1,4 @@
-Fork and readaptation from: JoshuaVandaele/Schem-File-to-Structure-Block-NBT-Format
+
 ---
 
 # 🏗️ Schematic2NBT Converter para Minecraft Create
@@ -6,14 +6,17 @@ Fork and readaptation from: JoshuaVandaele/Schem-File-to-Structure-Block-NBT-For
 Ferramenta em Python para converter arquivos `.schematic` do WorldEdit (e `.litematic` exportados como `.schematic` pelo Litematica) para o formato `.nbt` compatível com o Schematicannon do mod Create no Minecraft.
 
 ---
+Fork and re-adaptation of the original script: 
+[Schem-File-to-Structure-Block-NBT-Format](github.com/JoshuaVandaele/Schem-File-to-Structure-Block-NBT-Format)
 
-## ✨ Descrição
+---
+## 🌈 Descrição
 
 Este script automatiza a conversão de estruturas criadas em editores populares (WorldEdit, Litematica) para o formato de estrutura vanilla (`.nbt`). Assim, você pode importar facilmente suas construções no Schematicannon do Create sem precisar abrir mods dentro do jogo.
 
 ---
 
-## ⚙️ Requisitos
+## 🌈⚙️ Requisitos
 
 - **Python 3.8 ou superior**
 
@@ -26,31 +29,26 @@ Este script automatiza a conversão de estruturas criadas em editores populares 
     sudo apt install python3 python3-pip
     ```
 
-- **nbtlib (versão 1.12.1 recomendada)**
-  Instala a biblioteca NBT que é uma estrutura de dados em forma de árvore utilizada pelo Minecraft para armazenar dados arbitrários
+## nbtlib (versão 1.12.1 recomendada)
   
 Instale usando o pip:
   ```
   pip install "nbtlib==1.12.1"
   ```
-TQDM faz com que o Script tenha a barra de progresso da conversão
+Instala a biblioteca NBT que é uma estrutura de dados em forma de árvore utilizada pelo Minecraft para armazenar dados arbitrários]
+
+## TQDM
   ```
   pip install tqdm
-  ``` 
+  ```
+ faz com que o Script tenha a barra de progresso da conversão
 ---
 
 ## 🚀 Guia de Uso
 
 ### 1. Prepare seu arquivo
 
-- Para WorldEdit e Litematica use o `.schematic` exportado normalmente.
-
-## 🚀 Guia de Uso
-
-### 1. Prepare seu arquivo
-
-- Para WorldEdit: use o `.schematic` exportado normalmente.
-- Para Litematica: abra no Litematica e exporte como `.schematic`.
+- Para WorldEdit e Litematica : use o `.schematic` exportado/baixado normalmente.
 
 ### 2. Converta para `.nbt`
 
@@ -69,7 +67,7 @@ O arquivo `.nbt` será gerado na mesma pasta, com o mesmo nome.
 Todos os comandos possíveis do script schem2nbt.py
 Baseado na estrutura do parser de argumentos, aqui estão todos os comandos possíveis para testar o script:
 
-###Comandos básicos obrigatórios
+### Comandos básicos obrigatórios
 Converter arquivo único:
 
 ```
